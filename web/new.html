@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBank - Your Online Banking Solution</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar {
+    background-color: #3a82cf;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    margin: 0;
+    margin-left:-50%;
+}
+
+.navbar-toggle {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: background-color 0.3s;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #007BFF;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .nav-active {
+        display: flex;
+    }
+}
+
+
+/* caousel */
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+
+
+  /* main */
+.main{
+    display: flex;
+}
+ 
+/* .img2{
+    width: 3%;
+    margin-left: 55%;
+    margin-top: -9% ;
+}*/
+.img1{
+    margin-left: 14%;
+}
+.img2{
+    margin-right: 19%;
+}
+.txt1{
+    margin-left: 52%;
+    margin-top: -43%;
+}
+.txt2
+{
+    margin-left: 92%;
+    margin-top: -67%;
+    width: 68%;
+}
+.mainT{
+
+    font-family: serif;
+    color:#5188c7;;
+    border: 1px solid;
+    width: 30%;
+    margin-left: 31%;
+    padding: 4%;
+    text-align: center;
+
+    padding: 5%;
+    text-align: center;
+}
+.main2{
+    display: flex;
+    margin-top: 13%;
+    padding: 4%;
+    width: 118%;
+    margin-left: -8%;
+}
+.img3{
+    width: 34%;
+    margin-left: 14%;
+}
+.img4{
+    width: 20%;
+    margin-right: 20%;
+}
+.txt3{
+    margin-left: 63%;
+    margin-top: -39%;
+}
+.txt4{
+    margin-left: 106%;
+    margin-top: -65%;
+    width: 57%;
+
+}
+.bu1{
+
+  background-color: #0049ab;
+    border: none;
+    color: white;
+    padding: 16px 49px;
+    text-decoration: none;
+    margin: 34px -2px;
+    cursor: pointer;
+}
+
+/* footer */
+
+footer{
+    background-color: #5396dd;
+    padding: 2%;
+    width: 92%;
+    margin-left: 2%;
+}
+
+.fu{
+    
+    display: flex;
+    width: 59%;
+    color: aliceblue;
+    font-size: 110%;
+    margin-left: 21%;
+    font-family: auto;
+}
+
+.im{
+    margin-left: 6%;
+}
+.mm2{
+    margin-left: 21%;
+}
+    </style>
+    
+</head>
+<body>
+ <!-- Navigation Bar -->
+ <nav class="navbar">
+    <img src="image/logo.png" alt="logo" width="8%" class="logoimg">
+    <h1 class="logo">MyBank</h1>
+    <button class="navbar-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <ul class="nav-links">
+        <li><a href="home.jsp">Home</a></li>
+        <li><a href="Login.jsp">LogIn</a></li>
+        <li><a href="#">Transactions</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+
+
+
+
+
+<!-- silde show         -->
+
+
+
+<br><br><br>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="image/img5.png" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="image/img6.png" style="width:85%;margin-left: 7%;">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="image/img5.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+
+<br><br><br>
+
+
+    <!-- picture -->
+
+    <img class="im" src="image/amit.png" alt="img">
+
+<!-- Main Content Section -->
+
+
+    <h1 class="mainT">OUR POPULAR PRODUCTS</h1>
+    <br><br><br>
+<div class="allmain">
+      <div class="main">
+            <div  class="img1">
+            <img src="image/img7.png" width="50%" id="img1" alt="img">
+          <div class="txt1">
+            <b>STAR HOME LOAN</b><br>
+            ROI 8.50% p.a. onwards
+            Provides loans to purchase a Plot for construction of a House, to purchase/construct house/flat, as well as for renovation/ repair/alteration/addition to house/flat
+            <input type="submit" value="Learn More" name="b1" class="bu1">
+          </div>
+            </div>
+            <div class="img2">
+            <img src="image/im2.jpg" width="89%" alt="img" id="img2">
+            <div class="txt2">
+            <b>STAR ASSET BACKED LOAN</b><br>
+            25% in NFB Commissions
+            To provide working capital for building up of current assets,
+            <input type="submit" value="Learn More" name="b1" class="bu1">
+
+            </div>
+
+        </div>
+        </div>
+      <div class="main2">
+            <div  class="img3">
+                <img src="image/im3.png" width="60%" id="img1" alt="img">
+              <div class="txt3">
+                <b>GOLD LOAN</b><br>
+                At attractive rate of Interest
+Gold Loan is the most convenient and easy way to fulfil all your credit needs.
+<input type="submit" value="Learn More" name="b1" class="bu1">
+
+                
+              </div>
+                </div>
+                <div class="img4">
+                    
+                <img src="image/im4.png" width="100%" alt="img" id="img2">
+                <div class="txt4">
+                    <b>JAI JAWAN SALARY PLUS</b>
+                    For Defense Personnel
+                    Group Personal Accident Death Insurance Cover of up to Rs.50
+                    <input type="submit" value="Learn More" name="b1" class="bu1">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Add your content here -->
+
+<img src="image/mm2.png" alt="img" class="mm2">
+
+</main>
+<br>
+<!-- Footer Section -->
+<footer>
+   
+
+
+<div class="fu">
+    <p>
+       <b> Contact Us</b>
+India:
+1800 103 1906 (toll free)
+1800 220 229 (toll free - COVID Support)
+(022) - 40919191 (Chargeable number) 24X7
+For Overseas Contact Click Here
+Connect with us
+    </p>
+
+    <p>
+        <b>Quick Access</b>
+Interest Rate
+Service Charge
+Policies & Guidelines
+Doorstep banking
+Smart Banking
+Safe Banking
+BCSBI
+IBBI panel of Insolvency Professionals for July 1, 2023 to Dec 31, 2023.
+4th National Online Quiz on Insolvency and Bankruptcy Code, 2016
+    </p>
+
+    <p>
+
+        <b>Internal Engagement</b>
+Media Center
+Regional Rural Banks
+Treasury
+Training Centres
+Auditors Of The Bank
+CVC link for integrity pledge
+Syndicate Asba
+    </p>
+</div>
+
+<p>&copy; 2023 MyBank. All rights reserved.</p>
+    
+
+
+
+
+</footer> 
+<script>
+    
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
